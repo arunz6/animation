@@ -1,16 +1,21 @@
-import { gsap } from "gsap";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(useGSAP);
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+const Home = ({ children }) => {
+  const containerRef = useRef(null);
+  useGSAP(() => {
+    gsap.from(containerRef.current.children, {
+      opacity: 0,
+      y: 100,
+      duration: 1,
+      stagger: 0.3,
+    });
+  });
 
-const Home = () => {
-  return (
-    <>
-     <div className="page h-screen w-screen flex justify-center items-center "></div>
-    </>
-  );
+  return <div ref={containerRef}>{children}</div>;
 };
 
 export default Home;
