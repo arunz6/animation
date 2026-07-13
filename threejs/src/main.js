@@ -6,7 +6,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 //scene
 const scene = new THREE.Scene();
 
-const clock = new THREE.Clock();
 const windoww = {
   height: window.innerHeight,
   width: window.innerWidth,
@@ -15,19 +14,26 @@ const windoww = {
 //camera
 const camera = new THREE.PerspectiveCamera(
   75,
-  windoww.height / windoww.width,
+  windoww.width / windoww.height,
   0.1,
   1000,
 );
+// const gltfloder = new GLTFLoader();
 
-const gltfloder  = new GLTFLoader();
+// gltfloder.load("./model.glb", (gltf) => {
+//   const model = gltf.scene;
 
-gltfloder.load("./model.glb",(gltf)=>{
-const model = gltf.scene
+//   scene.add(model);
+// });
 
-scene.add(model)
-})
+const meshe = new THREE.Mesh(
 
+new THREE.BoxGeometry(1,1,1),
+new THREE.MeshBasicMaterial({color:0x00ff00})
+
+)
+
+scene.add(meshe)
 
 //const light
 const ambentlight = new THREE.AmbientLight("#ffffff", 1.01);
@@ -47,10 +53,39 @@ const canvas = document.querySelector("canvas");
 const rendrer = new THREE.WebGLRenderer({
   canvas: canvas,
 });
+
+
+const raycaster  = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+window.addEventListener("mousemove", (event) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -((event.clientY / window.innerHeight) * 2 - 1);
+
+  console.log(mouse.x, mouse.y);
+});
+
+window.addEventListener("click",()=>{
+  raycaster.setFromCamera(mouse,camera);
+const intersect = raycaster.intersectObject(meshe)
+
+if(intersect.length){
+  meshe.material.color.set("red")
+}
+}) 
+
+
+
+
 rendrer.setSize(windoww.width, windoww.height);
 
 window.addEventListener("resize", () => {
-  ((windoww.width = window.innerWidth), (windoww.height = window.innerHeight));
+  windoww.width = window.innerWidth;
+  windoww.height = window.innerHeight;
+
+  camera.aspect = windoww.width / windoww.height;
+  camera.updateProjectionMatrix();
+
+  rendrer.setSize(windoww.width, windoww.height);
 });
 
 rendrer.render(scene, camera);
@@ -59,9 +94,11 @@ const controls = new OrbitControls(camera, rendrer.domElement);
 controls.enableDamping = true;
 
 const animate = () => {
-  const elapsedTime = clock.getElapsedTime();
+  requestAnimationFrame(animate);
+
+  controls.update();
 
   rendrer.render(scene, camera);
-  requestAnimationFrame(animate);
 };
+
 animate();
