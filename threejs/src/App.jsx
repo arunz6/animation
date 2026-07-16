@@ -1,20 +1,18 @@
 import { Canvas } from "@react-three/fiber";
 import Exper from "./component/Exper";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+import Home from "./component/Home";
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  
   return (
     <>
-      <div className="parent h-screen w-screen  bg-black">
-      <div className="3dbg z-0 h-screen w-screen flex  items-center justify-center absolute">
-          <Canvas>  
-          <Exper />
-        </Canvas>
-      </div>
-       <div className="z-50   absolute top-10 left-10">
-        <h1 className="text-5xl mb-4 text-white ">hello</h1>
-        <h1 className="text-5xl font-bold text-white ">fullstack </h1>
-        </div>
-      </div>
+   <div className="main h-screen w-screen ">
+     <Home/>
+   </div>
     </>
   );
 }

@@ -1,27 +1,26 @@
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-gsap.registerPlugin(ScrollTrigger);
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Exper = () => {
   const { scene } = useGLTF("/shape.glb");
-  const mesh = useRef(null);
+  const meshRef = useRef(null);
+  console.log(meshRef.current);
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      trigger: "#section1",
+      endTrigger: "#section2",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: true,
+    });
 
-  useEffect(() => {
-    gsap.to(mesh.current.rotation, {
-      y: Math.PI * 2,
-      x: Math.PI*3,
-      duration: 100,
-      repeat: -1,
-      ease: 'linear',
-    });
-    gsap.to(mesh.current.material, {
-      opacity: 1,
-      duration: 2,
-      ease: "power2.out",
-    });
   });
+
   return (
     <>
       <ambientLight intensity={2} />
@@ -29,8 +28,16 @@ const Exper = () => {
       <directionalLight position={[5, 2, 10]} intensity={1} castShadow />
       <directionalLight position={[-10, 10, 10]} intensity={1} castShadow />
       <directionalLight position={[-10, -10, -10]} intensity={1} castShadow />
-<OrbitControls/>
-      <primitive object={scene} ref={mesh} material={mesh.material} scale={2.1} />
+      <directionalLight position={[4, 2, 9]} intensity={4} />
+     
+
+      <primitive
+        position={[0, -0.3, 0]}
+        object={scene}
+        ref={meshRef}
+        material={meshRef.material}
+        scale={2.1}
+      />
     </>
   );
 };
