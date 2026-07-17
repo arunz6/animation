@@ -2,8 +2,20 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import Exper from "./Exper";
 import Sectionone from "./homecomponent/Sectionone";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const Home = () => {
+  // useGSAP(() => {
+  //   ScrollSmoother.create({
+  //     smooth: 1.5,
+  //     effects: true, // data-speed, data-lag attributes ke liye
+  //   });
+  // });
+
   return (
     <div className="parent  w-screen  relative   bg-black">
       <Canvas

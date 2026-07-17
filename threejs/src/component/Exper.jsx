@@ -47,8 +47,8 @@ const Exper = () => {
         ease: "none",
         scrollTrigger: {
           trigger: "#section2",
-          start: "top bottom", // Blur shuru hoga jab Section 2 screen ke bottom se upar aane lagega
-          end: "top center", // Section 2 ke half screen par aate hi background fully blur ho jayega
+          start: "top center", // Blur shuru hoga jab Section 2 screen ke bottom se upar aane lagega
+          end: "top top", // Section 2 ke half screen par aate hi background fully blur ho jayega
           scrub: true,
         },
       },
@@ -70,7 +70,7 @@ const Exper = () => {
         object={scene}
         ref={meshRef}
         material={meshRef.material}
-        scale={2.1}
+        scale={2.7}
       />
     </>
   );
