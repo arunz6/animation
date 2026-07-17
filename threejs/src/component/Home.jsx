@@ -1,6 +1,8 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import Exper from "./Exper";
+import Sectionone from "./homecomponent/Sectionone";
+
 const Home = () => {
   return (
     <div className="parent  w-screen  relative   bg-black">
@@ -19,8 +21,10 @@ const Home = () => {
       </Canvas>
       <div
         id="section1"
-        className=" relative z-10 min-h-[100vh]  w-screen"
-      ></div>
+        className="relative z-10 min-h-[100vh] w-screen flex flex-col items-center justify-center text-white bg-black/40 transition-colors duration-300"
+      >
+        <Sectionone />
+      </div>
       <div
         id="section2"
         style={{
