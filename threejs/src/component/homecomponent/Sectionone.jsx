@@ -84,10 +84,9 @@ const Sectionone = () => {
           ref={peraref}
           className="text-gray-400 text-xs sm:text-sm leading-relaxed"
         >
-          Full-stack developer crafting production-shaped web apps — from
-          real-time systems with proper auth and sockets, to AI agents that
-          reason, search, and decide on their own. MERN by day, LangChain by
-          night.
+          I build resilient, high-performance web applications using the MERN
+          ecosystem. Crafting seamless user experiences from database
+          architecture to frontend polish.
         </p>
       </div>
     </div>

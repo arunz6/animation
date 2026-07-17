@@ -6,6 +6,7 @@ import ScrollSmoother from "gsap/ScrollSmoother";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Secondcomponent from "./homecomponent/Secondcomponent";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const Home = () => {
@@ -46,10 +47,7 @@ const Home = () => {
         }}
         className="relative z-10 min-h-[100vh] w-screen flex flex-col items-center justify-center text-white bg-black/40 transition-colors duration-300"
       >
-        {/* Yeh content bilkul sharp aur clear rahega! */}
-        <h1 className="text-5xl font-bold select-none text-amber-50 drop-shadow-md">
-          Scroll down to blur the 3D model background!
-        </h1>
+      <Secondcomponent/>
       </div>
     </div>
   );
