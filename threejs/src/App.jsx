@@ -1,10 +1,10 @@
 import { Canvas } from "@react-three/fiber";
-import Exper from "./component/Exper";
+import Exper from "./component/threedmodel/Exper";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
-import Home from "./component/Home";
-import Navbar from "./component/Navbar";
+import Home from "./component/home/Home";
+import Navbar from "./component/navbar/Navbar";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {

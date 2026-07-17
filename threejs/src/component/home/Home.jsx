@@ -1,6 +1,6 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-import Exper from "./Exper";
+import Exper from "../threedmodel/Exper";
 import Sectionone from "./homecomponent/Sectionone";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import gsap from "gsap";
