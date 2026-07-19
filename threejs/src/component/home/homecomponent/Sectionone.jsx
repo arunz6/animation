@@ -20,7 +20,7 @@ const Sectionone = () => {
     tl.from(splitFull.chars, {
       y: 40,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.4 ,
       ease: "power3.out",
       stagger: 0.05,
     });
@@ -31,7 +31,7 @@ const Sectionone = () => {
       duration: 0.4,
       ease: "power3.out",
       stagger: 0.05,
-      delay: 0.3, // fullstack ke thoda baad
+     
     });
     gsap.from(splitpera.words, {
       opacity: 0,

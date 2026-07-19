@@ -26,7 +26,7 @@ const Exper = () => {
           trigger: "#section1",
           endTrigger: "#section2",
           start: "top top",
-          end: "bottom bottom",
+          end: "center center",
           scrub: true,
         },
       });
