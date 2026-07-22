@@ -25,19 +25,34 @@ const Sectionone = () => {
       stagger: 0.05,
     });
 
-    tl.from(splitDev.chars, {
-      y: 40,
+    tl.from(
+      splitDev.chars,
+      {
+        y: 40,
+        opacity: 0,
+        duration: 0.4,
+        ease: "power3.out",
+        stagger: 0.05,
+      },
+      "<",
+    );
+    tl.from("#threedmodel", {
       opacity: 0,
-      duration: 0.4,
+      duration: 7,
+      x:400,
       ease: "power3.out",
       stagger: 0.05,
     });
-    gsap.from(splitpera.words, {
-      opacity: 0,
-      duration: 4,
-      ease: "power3.out",
-      stagger: 0.05,
-    });
+    tl.from(
+      splitpera.words,
+      {
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.05,
+      },
+      "<",
+    );
 
     // ✅ Cleanup — component unmount pe splits revert honge
     return () => {
@@ -63,7 +78,7 @@ const Sectionone = () => {
         </h1>
       </div>
 
-      <div className="LINKTAGS z-10 fixed right-0 top-[18%] sm:top-[20%] bg-gray-950 flex flex-col gap-[0.7rem] border-2 border-r-0 rounded-l-xl text-white origin-right p-1 scale-[0.56] sm:scale-[0.92] md:scale-100 lg:scale-110">
+      <div className="LINKTAGS z-10 fixed right-0 bottom-[30%] sm:bottom-[20%] bg-gray-950 flex flex-col gap-[0.7rem] border-2 border-r-0 rounded-l-xl text-white origin-right p-1 scale-[0.56] sm:scale-[0.92] md:scale-100 lg:scale-110">
         {/* LinkedIn */}
         <a href="" className="px-2 py-1 hover:text-gray-400 transition-colors">
           <svg
@@ -119,7 +134,7 @@ const Sectionone = () => {
         </a>
       </div>
 
-      <div className="detailsec absolute right-[5%] sm:right-[8%] md:right-[10%] bottom-[10%] sm:bottom-[9%] md:bottom-[12%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
+      <div className="detailsec absolute scale-120 right-[5%] sm:right-[8%] md:right-[10%] top-[30%] sm:top-[9%] md:top-[12%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
         <p
           ref={peraref}
           className="text-gray-400 text-xs sm:text-sm leading-relaxed"

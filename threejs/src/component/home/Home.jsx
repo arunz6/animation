@@ -38,7 +38,7 @@ const Home = () => {
           pointerEvents: "none",
         }}
       >
-        <Canvas>
+        <Canvas id="threedmodel">
           <Exper />
         </Canvas>
       </div>
