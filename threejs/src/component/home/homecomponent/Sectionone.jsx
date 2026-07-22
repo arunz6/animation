@@ -134,7 +134,7 @@ const Sectionone = () => {
         </a>
       </div>
 
-      <div className="detailsec absolute scale-120 right-[5%] sm:right-[8%] md:right-[10%] top-[30%] sm:top-[9%] md:top-[12%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
+      <div className="detailsec absolute scale-130 right-[5%] sm:right-[8%] md:right-[10%] top-[30%] sm:top-[9%] md:top-[12%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
         <p
           ref={peraref}
           className="text-gray-400 text-xs sm:text-sm leading-relaxed"

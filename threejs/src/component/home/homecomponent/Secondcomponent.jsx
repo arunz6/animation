@@ -14,7 +14,7 @@ const Secondcomponent = () => {
     gsap.from(els, {
       y: 40,
       opacity: 0,
-      duration: 0.8,
+      duration: 3,
       ease: "power3.out",
       stagger: 0.15,
       scrollTrigger: {
