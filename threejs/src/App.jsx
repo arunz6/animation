@@ -13,6 +13,7 @@ function App() {
     <>
       <div className="main z-0 min-h-screen w-full bg-black overflow-x-hidden text-white ">
         <div className="navbar fixed top-0 left-3 z-30 text-center w-screen text-white">
+          {/* static navbar  */}
           <Navbar />
         </div>
         <Home />
