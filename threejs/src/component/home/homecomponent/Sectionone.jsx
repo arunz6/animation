@@ -63,7 +63,7 @@ const Sectionone = () => {
 
   return (
     <div className="h-screen w-full relative overflow-hidden">
-      <div className="fullstack relative left-4 sm:left-6 md:left-10 top-[32%] sm:top-[36%] md:top-[40%]">
+      <div className="fullstack relative left-4 sm:left-6 md:left-10 top-[60%] sm:top-[40%] md:top-[50%]">
         <h1
           className="fullstacktitle text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-semibold uppercase tracking-wider text-white"
           ref={fullstackref}
@@ -134,7 +134,7 @@ const Sectionone = () => {
         </a>
       </div>
 
-      <div className="detailsec absolute scale-130 right-[5%] sm:right-[8%] md:right-[10%] top-[30%] sm:top-[9%] md:top-[12%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
+      <div className="detailsec absolute md:scale-160 right-[5%] sm:right-[8%]  md:right-[10%] top-[30%] sm:top-[15%] md:top-[20%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
         <p
           ref={peraref}
           className="text-gray-400 text-xs sm:text-sm leading-relaxed"
