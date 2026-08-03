@@ -10,6 +10,11 @@
       "Admin can add, update, delete and manage library books",
       "Book issue and return tracking",
       "Automatic fine calculation for overdue books",
+      "Dashboard with books, users and issue analytics",
+       "Secure login and registration using JWT and bcrypt",
+      "Admin can add, update, delete and manage library books",
+      "Book issue and return tracking",
+      "Automatic fine calculation for overdue books",
       "Dashboard with books, users and issue analytics"
     ],
     "github": "https://github.com/",
@@ -54,6 +59,11 @@
     "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
     "skills": ["JavaScript", "Chrome API", "AI"],
     "features": [
+      "Suspicious URL detection",
+      "Real-time website analysis",
+      "Security warnings",
+      "Browser extension integration",
+      "AI-based threat detection",
       "Suspicious URL detection",
       "Real-time website analysis",
       "Security warnings",

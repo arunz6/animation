@@ -108,21 +108,39 @@ const Projects = () => {
         // Features one by one
         tl.to(
           features,
-          { opacity: 1, y: 0, stagger: 0.12, duration: 0.35, ease: "power2.out" },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.12,
+            duration: 0.35,
+            ease: "power2.out",
+          },
           "-=0.35",
         );
 
         // Tech stack one by one
         tl.to(
           techs,
-          { opacity: 1, y: 0, stagger: 0.12, duration: 0.35, ease: "power2.out" },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.12,
+            duration: 0.35,
+            ease: "power2.out",
+          },
           "-=0.25",
         );
 
         // Title letter by letter
         tl.to(
           titleLetters,
-          { opacity: 1, y: 0, stagger: 0.04, duration: 0.3, ease: "power2.out" },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.04,
+            duration: 0.3,
+            ease: "power2.out",
+          },
           "-=0.2",
         );
 
@@ -220,7 +238,7 @@ const Projects = () => {
                 DESCRIPTION
             ================================= */}
 
-            <div className="project-description absolute top-[15%] right-[7%] w-[85%] sm:w-[70%] md:w-[420px] p-5 md:p-7 rounded-2xl border border-white/10 bg-white/[0.025] backdrop-blur-xl z-30">
+            <div className="project-description absolute top-[15%] overflow-y-auto right-[7%] w-[85%] sm:w-[70%] md:left-[10%] md:h-[20rem] h-[30vh] max-h-[20rem] max-h-[42vh] overflow-y-auto [scrollbar-width:thin] [scrollbar-color:rgba(255,255,255,0.15)_transparent]  [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-white/15 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-white/30  md:w-[40rem] p-5 md:p-7 rounded-2xl border border-white/10 bg-white/[0.025] backdrop-blur-xl z-30">
               {/* Description */}
 
               <p className="text-sm md:text-base leading-6 md:leading-7 text-white/60 mb-5">
