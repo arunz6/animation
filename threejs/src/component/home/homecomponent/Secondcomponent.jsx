@@ -44,12 +44,12 @@ const Secondcomponent = () => {
       <div className="reveal max-w-3xl">
         <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
           I'm <span className="text-white">Arun Rajput</span>, a full-stack
-          developer who believes the best way to learn is to build — not
-          just follow tutorials, but ship real, working systems. I work
-          primarily with the MERN stack, but what excites me most is
-          pushing beyond typical CRUD apps into agentic AI systems —
-          building LLM pipelines that reason, search the web in real time,
-          and make decisions on their own using LangGraph and RAG.
+          developer who believes the best way to learn is to build — not just
+          follow tutorials, but ship real, working systems. I work primarily
+          with the MERN stack, but what excites me most is pushing beyond
+          typical CRUD apps into agentic AI systems — building LLM pipelines
+          that reason, search the web in real time, and make decisions on their
+          own using LangGraph and RAG.
         </p>
       </div>
 
@@ -65,9 +65,7 @@ const Secondcomponent = () => {
           <p className="text-gray-400 text-sm mt-1">
             Information Technology · Vikrant University, Gwalior
           </p>
-          <p className="text-gray-500 text-sm mt-1">
-            2023 – 2026 · CGPA: 7.79
-          </p>
+          <p className="text-gray-500 text-sm mt-1">2023 – 2026 · CGPA: 7.79</p>
           <p className="text-gray-400 text-sm mt-3">
             Transitioning into an MCA at SGSITS, Indore.
           </p>
@@ -81,8 +79,8 @@ const Secondcomponent = () => {
             Open to Full-Stack / SDE Roles
           </p>
           <p className="text-gray-400 text-sm mt-1">
-            Sharpening problem-solving through DSA, and always looking for
-            the next hard problem worth solving.
+            Sharpening problem-solving through DSA, and always looking for the
+            next hard problem worth solving.
           </p>
         </div>
       </div>
@@ -116,6 +114,8 @@ const Secondcomponent = () => {
             <p className="text-gray-400 text-sm leading-relaxed">
               Git, GitHub, Postman, TypeScript
             </p>
+
+            
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import Exper from "../threedmodel/Exper";
+import Exper from "../sharedcomponents/threedmodel/Exper";
 import Sectionone from "./homecomponent/Sectionone";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
