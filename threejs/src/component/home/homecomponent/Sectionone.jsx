@@ -39,7 +39,7 @@ const Sectionone = () => {
     tl.from("#threedmodel", {
       opacity: 0,
       duration: 7,
-      x:400,
+      x: 400,
       ease: "power3.out",
       stagger: 0.05,
     });
@@ -80,7 +80,11 @@ const Sectionone = () => {
 
       <div className="LINKTAGS z-10 fixed right-0 bottom-[30%] sm:bottom-[20%] bg-gray-950 flex flex-col gap-[0.7rem] border-2 border-r-0 rounded-l-xl text-white origin-right p-1 scale-[0.56] sm:scale-[0.92] md:scale-100 lg:scale-110">
         {/* LinkedIn */}
-        <a href="" className="px-2 py-1 hover:text-gray-400 transition-colors">
+        <a
+          href="https://www.linkedin.com/in/arun-rajput-592a68373/"
+          target="_blank"
+          className="px-2 py-1 hover:text-gray-400 transition-colors"
+        >
           <svg
             width="31"
             height="31"
@@ -96,7 +100,12 @@ const Sectionone = () => {
         </a>
 
         {/* Mail */}
-        <a href="" className="px-2 py-1 hover:text-gray-400 transition-colors">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=arunrajput88176894@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-2 py-1 hover:text-gray-400 transition-colors"
+        >
           <svg
             width="34"
             height="27"
@@ -114,7 +123,8 @@ const Sectionone = () => {
         {/* GitHub */}
         <a
           id="github"
-          href=""
+          href="https://github.com/arunz6"
+          target="_blank"
           className="px-2 py-1 hover:text-gray-400 transition-colors"
         >
           <svg
