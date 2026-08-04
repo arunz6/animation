@@ -13,6 +13,10 @@ const Projects = () => {
   // Dynamic refs for every project
   const projectRefs = useRef([]);
 
+
+
+  
+
   useGSAP(
     () => {
       const projects = projectRefs.current;
