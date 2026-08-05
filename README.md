@@ -23,15 +23,15 @@ Designed to showcase my work through smooth animations, scroll-driven interactio
 ## 🖥️ Preview
 
 <p align="center">
-  <img src="./public/1stsection.png" alt="Portfolio Home" width="90%" />
+  <img src="./threejs/public/1stsection.png" alt="Portfolio Home" width="90%" />
 </p>
 
 <p align="center">
-  <img src="./public/2ndaboutsection.png" alt="Portfolio About Section" width="90%" />
+  <img src="./threejs/public/2ndaboutmesection.png" alt="Portfolio About Section" width="90%" />
 </p>
 
 <p align="center">
-  <img src="./public/3rdprojectssection.png" alt="Portfolio Projects Section" width="90%" />
+  <img src="./threejs/public/3rdprojectsection.png" alt="Portfolio Projects Section" width="90%" />
 </p>
 
 ---
