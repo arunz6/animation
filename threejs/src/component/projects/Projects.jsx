@@ -57,7 +57,7 @@ const Projects = () => {
       tl.fromTo(
         bglogoref.current,
         { opacity: 0, scale: 0.7 },
-        { opacity: 1, scale: 1, duration: 1, ease: "power3.out" },
+        { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" },
         0,
       );
 
@@ -161,7 +161,7 @@ const Projects = () => {
         // This is VERY important.
         // User gets time to see the whole project.
 
-        tl.to({}, { duration: 1.3 });
+        tl.to({}, { duration: 0.4 });
 
         // --------------------------------
         // PROJECT EXIT
