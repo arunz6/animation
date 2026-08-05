@@ -303,6 +303,10 @@ const Projects = () => {
               <div className="flex flex-wrap gap-2 md:gap-3 mb-5">
                 {project.skills.map((skill) => (
                   <span
+
+
+
+                  
                     key={skill}
                     className="project-tech px-4 md:px-5 py-2 rounded-full border border-white/15 bg-black/40 backdrop-blur-md text-[8px] md:text-[9px] tracking-[0.15em] uppercase text-white/60"
                   >
