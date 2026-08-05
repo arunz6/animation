@@ -149,9 +149,7 @@ const Sectionone = () => {
           ref={peraref}
           className="text-gray-400 text-xs sm:text-sm leading-relaxed"
         >
-          I build resilient, high-performance web applications using the MERN
-          ecosystem. Crafting seamless user experiences from database
-          architecture to frontend polish.
+          Full-Stack & AI Engineer building production-grade MERN apps and agentic AI systems (RAG, LangGraph). Focused on scalable backends, real-time architectures, and practical AI.
         </p>
       </div>
     </div>
