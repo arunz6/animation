@@ -142,6 +142,9 @@ const Sectionone = () => {
             />
           </svg>
         </a>
+
+
+        
       </div>
 
       <div className="detailsec absolute md:scale-160 right-[5%] sm:right-[8%]  md:right-[10%] top-[30%] sm:top-[15%] md:top-[20%] w-[85%] sm:w-[55%] md:w-[35%] lg:w-[25%] xl:w-[20%] text-right">
