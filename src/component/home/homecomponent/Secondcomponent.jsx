@@ -114,15 +114,6 @@ const Secondcomponent = () => {
             <p className="text-gray-400 text-sm leading-relaxed">
               Git, GitHub, Postman, TypeScript
             </p>
-
-            
-
-
-
-
-
-
-            
           </div>
         </div>
       </div>

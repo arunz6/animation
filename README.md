@@ -1,74 +1,16 @@
-# ✦ Personal Portfolio
+# React + Vite
 
-A modern, interactive developer portfolio built from scratch with **React, GSAP, Three.js, and Tailwind CSS**.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Designed to showcase my work through smooth animations, scroll-driven interactions, 3D visuals, and a responsive user experience.
+Currently, two official plugins are available:
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/arunz6/animation)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
----
+## React Compiler
 
-## ✨ Highlights
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Interactive **3D hero experience** with Three.js
-- Scroll-driven animations with **GSAP & ScrollTrigger**
-- Character and word-level text animations using **SplitText**
-- Drag and wheel-based project interactions
-- Smooth responsive experience across desktop, tablet, and mobile
-- Custom animated mobile navigation
-- Component-based architecture with React
+## Expanding the Oxlint configuration
 
----
-
-## 🖥️ Preview
-
-<p align="center">
-  <img src="./threejs/public/1stsection.png" alt="Portfolio Home" width="90%" />
-</p>
-
-<p align="center">
-  <img src="./threejs/public/2ndaboutmesection.png" alt="Portfolio About Section" width="90%" />
-</p>
-
-<p align="center">
-  <img src="./threejs/public/3rdprojectsection.png" alt="Portfolio Projects Section" width="90%" />
-</p>
-
----
-
-## 🛠️ Tech Stack
-
-- **React.js**
-- **Vite**
-- **Tailwind CSS**
-- **GSAP**
-  - ScrollTrigger
-  - SplitText
-  - Draggable
-  - Observer
-  - InertiaPlugin
-- **Three.js**
-- **React Three Fiber**
-- **React Icons**
-
----
-
-## 📂 Sections
-
-| Section | Purpose |
-|---|---|
-| **Home** | Animated introduction with interactive 3D elements |
-| **About** | Personal background, skills and technologies |
-| **Projects** | Interactive showcase of selected projects |
-| **Achievements** | Highlights and milestones |
-| **Contact** | Social links and contact information |
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone
-
-```bash
-git clone https://github.com/arunz6/animation.git
-cd animation
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
