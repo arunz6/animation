@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import Home from "./component/home/Home";
 import Navbar from "./component/sharedcomponents/navbar/Navbar";
 import Projects from "./component/projects/Projects";
+import Footer from "./component/footer/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Home />
         <Projects />
 
+
+        <Footer/>
       </div>
     </>
   );
