@@ -8,7 +8,6 @@ import Navbar from "./component/sharedcomponents/navbar/Navbar";
 import Projects from "./component/projects/Projects";
 import Footer from "./component/footer/Footer";
 import Skills from "./component/skills/Skills";
-import Eduachivment from "./component/educationachivment/eduachivment";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
