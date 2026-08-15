@@ -49,8 +49,8 @@
       "Product search and filtering",
       "Product variants and detailed product pages"
     ],
-    "github": "https://github.com/",
-    "live": "https://example.com/"
+    "github": "https://github.com/arunz6/snitch",
+    "live": "https://snitch-taml.onrender.com/"
   },
   {
     "id": 4,
