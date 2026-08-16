@@ -53,10 +53,7 @@ const Footer = () => {
   };
 
   return (
-    <div
-      id="footer"
-      className="relative z-10 w-screen bg-black/40 text-white"
-    >
+    <div id="footer" className="relative z-10 w-screen bg-black/40 text-white">
       <div
         ref={containerRef}
         className="w-full max-w-5xl mx-auto px-6 sm:px-10 py-20 flex flex-col gap-16"
@@ -75,8 +72,8 @@ const Footer = () => {
         <div className="reveal max-w-3xl">
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
             Open to SDE / Full-Stack internship and full-time roles. Whether
-            it's an opportunity, a project, or just a technical chat — my
-            inbox is open.
+            it's an opportunity, a project, or just a technical chat — my inbox
+            is open.
           </p>
         </div>
 
@@ -125,8 +122,8 @@ const Footer = () => {
             </div>
 
             <a
-              href="/resume.pdf"
-              download
+              href="/Arun_Rajput_Resume_Detailed.docx"
+              download="Arun_Rajput_Resume_Detailed.docx"
               className="w-fit flex items-center gap-2 mt-2 px-6 py-3 rounded-full border border-white/20 bg-white/[0.04] text-[10px] tracking-[0.15em] uppercase text-white/70 hover:bg-white hover:text-black transition-all duration-300"
             >
               <Download size={14} />
@@ -194,8 +191,8 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10 pt-8">
           <p className="text-gray-500 text-xs tracking-wide">
-            © {new Date().getFullYear()} Arun Rajput. Built with React,
-            Three.js &amp; GSAP.
+            © {new Date().getFullYear()} Arun Rajput. Built with React, Three.js
+            &amp; GSAP.
           </p>
 
           <button

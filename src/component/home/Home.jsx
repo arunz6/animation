@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import Exper from "../sharedcomponents/threedmodel/Exper";
+import React, { useRef, useState } from "react";
 import Sectionone from "./homecomponent/Sectionone";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -10,38 +10,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const canvasWrapperRef = useRef(null);
+  const [showCanvas, setShowCanvas] = useState(true);
 
   useGSAP(() => {
     ScrollTrigger.create({
       trigger: "#section2",
-      start: "bottom bottom", // jab section2 ka bottom, viewport ke bottom tak pahunche
+      start: "bottom bottom",
+
       onEnter: () => {
-        gsap.to(canvasWrapperRef.current, { autoAlpha: 0, duration: 0.4 });
+        setShowCanvas(false);
       },
+
       onLeaveBack: () => {
-        gsap.to(canvasWrapperRef.current, { autoAlpha: 1, duration: 0.4 });
+        setShowCanvas(true);
       },
     });
   }, []);
 
   return (
     <div className="parent relative w-screen bg-black">
-      <div
-        ref={canvasWrapperRef}
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          height: "100vh",
-          width: "100vw",
-          zIndex: 1,
-          pointerEvents: "none",
-        }}
-      >
-        <Canvas id="threedmodel">
-          <Exper />
-        </Canvas>
-      </div>
+      {showCanvas && (
+        <div
+          ref={canvasWrapperRef}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            height: "100vh",
+            width: "100vw",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        >
+          <Canvas id="threedmodel">
+            <Exper />
+          </Canvas>
+        </div>
+      )}
 
       <div
         id="section1"
