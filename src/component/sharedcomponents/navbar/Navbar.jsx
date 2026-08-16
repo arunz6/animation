@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,17 +22,19 @@ export default function Navbar() {
     const el = document.getElementById("footer");
 
     if (el) {
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+      gsap.to(window, {
+        duration: 2.5,
+        scrollTo: {
+          y: el,
+        },
+        ease: "power2.inOut",
       });
     }
   };
-
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-5">
       <nav
-  className={`fixed top-0 left-0 z-50 items-center justify-between flex w-screen rounded-none border border-white/10 bg-black/80 px-4 py-3 backdrop-blur-md md:left-1/2 md:-translate-x-1/2 md:max-w-5xl md:rounded-full md:px-5 md:py-3
+        className={`fixed top-0 left-0 z-50 items-center justify-between flex w-screen rounded-none border border-white/10 bg-black/80 px-4 py-3 backdrop-blur-md md:left-1/2 md:-translate-x-1/2 md:max-w-5xl md:rounded-full md:px-5 md:py-3
     transition-all duration-300
     ${
       scrolled
@@ -38,7 +42,7 @@ export default function Navbar() {
         : ""
     }
   `}
->
+      >
         {/* Portfolio Name */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

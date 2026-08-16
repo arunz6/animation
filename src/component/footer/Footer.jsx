@@ -48,9 +48,15 @@ const Footer = () => {
     setTimeout(() => setSent(false), 4000);
   };
 
+ 
+
   const scrollToTop = () => {
-    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
-  };
+  document.getElementById("home")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
+
 
   return (
     <div id="footer" className="relative z-10 w-screen bg-black/40 text-white">

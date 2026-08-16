@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="parent relative w-screen bg-black">
+    <div  id="home"  className="parent relative w-screen bg-black">
       {showCanvas && (
         <div
           ref={canvasWrapperRef}
