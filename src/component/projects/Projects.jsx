@@ -13,15 +13,10 @@ const Projects = () => {
   // Dynamic refs for every project
   const projectRefs = useRef([]);
 
-
-
-  
-
   useGSAP(
     () => {
       const projects = projectRefs.current;
 
-    
       // -----------------------------
       // MAIN PROJECT TIMELINE
       // -----------------------------
@@ -48,15 +43,6 @@ const Projects = () => {
           // markers: true,
         },
       });
-
-      // -----------------------------
-      // BACKGROUND LOGO
-      // -----------------------------
-
-   // -----------------------------
-// FIXED BACKGROUND LOGO ANIMATION
-// -----------------------------
-
 
       // -----------------------------
       // EACH PROJECT
@@ -190,7 +176,6 @@ const Projects = () => {
       id="sec3"
       className="relative w-full h-screen overflow-hidden bg-[#050505] text-white"
     >
-     
       {/* =====================================
           PROJECTS
       ===================================== */}
@@ -204,26 +189,24 @@ const Projects = () => {
             }}
             className="absolute inset-0 w-full h-full opacity-0"
           >
-           
-
             {/* =================================
                 DESCRIPTION
             ================================= */}
 
             <div className="project-description absolute top-[15%] overflow-y-auto right-[7%] w-[85%] sm:w-[70%] md:left-[10%] md:h-[20rem] h-[30vh] max-h-[20rem] max-h-[42vh] overflow-y-auto [scrollbar-width:thin] [scrollbar-color:rgba(255,255,255,0.15)_transparent]  [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-white/15 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-white/30  md:w-[40rem] p-5 md:p-7 rounded-2xl border border-white/10 bg-white/[0.025] backdrop-blur-xl z-30">
               {/* Description */}
-
-              <p className="text-sm md:text-base leading-6 md:leading-7 text-white/60 mb-5">
+              {/* text size bumped: md:text-base -> md:text-lg */}
+              <p className="text-sm md:text-lg leading-6 md:leading-8 text-white/60 mb-5">
                 {project.description}
               </p>
 
               {/* Features */}
-
               <div className="space-y-3">
                 {project.features.map((feature, featureIndex) => (
                   <div
                     key={featureIndex}
-                    className="project-feature flex gap-3 text-[10px] md:text-xs text-white/45"
+                    // text size bumped: md:text-xs -> md:text-sm
+                    className="project-feature flex gap-3 text-[10px] md:text-sm text-white/45"
                   >
                     <span className="text-white/20">
                       {String(featureIndex + 1).padStart(2, "0")}
@@ -241,11 +224,9 @@ const Projects = () => {
 
             <div className="absolute right-[3%] md:right-[5%] bottom-[10%] md:bottom-[8%] w-[92%] sm:w-[75%] md:w-[55%] max-w-[800px] z-10">
               {/* Glow */}
-
               <div className="absolute -inset-10 rounded-full bg-white/[0.035] blur-[80px]" />
 
               {/* Image */}
-
               <div className="relative overflow-hidden rounded-tl-2xl rounded-br-2xl border border-white/10 shadow-2xl">
                 <img
                   className="project-image w-full h-[42vh] md:h-[50vh] object-cover grayscale opacity-0 brightness-[0.65] md:brightness-[0.75]"
@@ -254,7 +235,6 @@ const Projects = () => {
                 />
 
                 {/* Image overlay */}
-
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
               </div>
             </div>
@@ -271,12 +251,9 @@ const Projects = () => {
               <div className="flex flex-wrap gap-2 md:gap-3 mb-5">
                 {project.skills.map((skill) => (
                   <span
-
-
-
-                  
                     key={skill}
-                    className="project-tech px-4 md:px-5 py-2 rounded-full border border-white/15 bg-black/40 backdrop-blur-md text-[8px] md:text-[9px] tracking-[0.15em] uppercase text-white/60"
+                    // text size bumped: md:text-[9px] -> md:text-xs
+                    className="project-tech px-4 md:px-5 py-2 rounded-full border border-white/15 bg-black/40 backdrop-blur-md text-[8px] md:text-xs tracking-[0.15em] uppercase text-white/60"
                   >
                     {skill}
                   </span>
@@ -307,26 +284,18 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-5 md:px-6 py-2.5 md:py-3 rounded-full border border-white/20 bg-white/[0.04] text-[8px] md:text-[10px] tracking-[0.15em] uppercase text-white/70 hover:bg-white hover:text-black transition-all duration-300"
+                  // text size bumped: md:text-[10px] -> md:text-xs
+                  className="px-5 md:px-6 py-2.5 md:py-3 rounded-full border border-white/20 bg-white/[0.04] text-[8px] md:text-xs tracking-[0.15em] uppercase text-white/70 hover:bg-white hover:text-black transition-all duration-300"
                 >
                   View Github
                 </a>
-
-
-
-
-
-
-
-
-
-
 
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-5 md:px-6 py-2.5 md:py-3 rounded-full border border-white/20 bg-white/[0.04] text-[8px] md:text-[10px] tracking-[0.15em] uppercase text-white/70 hover:bg-white hover:text-black transition-all duration-300"
+                  // text size bumped: md:text-[10px] -> md:text-xs
+                  className="px-5 md:px-6 py-2.5 md:py-3 rounded-full border border-white/20 bg-white/[0.04] text-[8px] md:text-xs tracking-[0.15em] uppercase text-white/70 hover:bg-white hover:text-black transition-all duration-300"
                 >
                   Live Website
                 </a>
